@@ -1,0 +1,42 @@
+<div class="page-width">
+  <div class="grid">
+    <div class="grid__item medium-up--one-half">
+      <img src="{{ product.featured_image | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}">
+    </div>
+    <div class="grid__item medium-up--one-half">
+      <h1>{{ product.title }}</h1>
+      <div class="product-single__price">
+        <span>{{ product.price | money }}</span>
+      </div>
+      <div class="product-description rte">
+        {{ product.description }}
+      </div>
+      <form method="post" action="/cart/add">
+        <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+        <button type="submit" name="add" class="btn">
+          Add to cart
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_quantity_selector",
+      "label": "Show quantity selector",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "label": "Show vendor",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

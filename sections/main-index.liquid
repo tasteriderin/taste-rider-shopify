@@ -1,0 +1,48 @@
+<div class="page-width">
+  <div class="section-header text-center">
+    <h2>Welcome to Taste Rider</h2>
+    <p>Discover authentic flavors and premium spices</p>
+  </div>
+
+  <div class="grid">
+    <div class="grid__item">
+      <div class="feature-row">
+        <div class="feature-row__text feature-row__text--left">
+          <h3>Premium Spices</h3>
+          <div class="rte">
+            <p>Explore our collection of handpicked spices sourced from the finest regions.</p>
+          </div>
+          <a href="/collections/spices" class="btn">
+            Shop Spices
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Homepage",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Welcome to Taste Rider"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subheading",
+      "default": "Discover authentic flavors and premium spices"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Homepage",
+      "category": "Custom Content"
+    }
+  ]
+}
+{% endschema %}
