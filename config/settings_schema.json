@@ -1,0 +1,31 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Taste Rider",
+    "theme_version": "1.0.0",
+    "theme_author": "Taste Rider",
+    "theme_documentation_url": "",
+    "theme_support_url": ""
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "header",
+        "content": "General colors"
+      },
+      {
+        "type": "color",
+        "id": "primary_color",
+        "label": "Primary color",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "secondary_color",
+        "label": "Secondary color",
+        "default": "#ffffff"
+      }
+    ]
+  }
+]
